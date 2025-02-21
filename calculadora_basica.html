@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //calculadora basica 1.0
+        
+        let teclado = Number(prompt('1 suma || 2 resta || 4 multiplicasion ||    5 division'))
+
+        let num1 = Number(prompt('ingrese numero 1'))
+        let num2 = Number(prompt('ingrese numero 2'))
+
+        let guardar;
+
+        if (teclado ==1){
+            guardar = num1 + num2;
+            alert(guardar)
+        }
+
+        if (teclado ==2){
+            guardar = num1 -num2;
+            alert(guardar)
+        }
+
+        if (teclado ==3){
+            guardar = num1 /num2;
+            alert(guardar)
+        }
+        if (teclado ==4){
+            guardar = num1 * num2;
+            alert(guardar)
+        }else{
+            alert('numero incorrecto')
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

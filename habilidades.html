@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let nombresdbz = ["gohan ", "goku", "vegeta","broli" ]
+
+    let poder = [
+        [40,90,80],
+        [90,80,30],
+        [70,60,100],
+        [100,50,100]
+    ];
+
+    function calcularpromedio(poder){
+        let promedios = [];
+        for (let i = 0; i < poder.length; i++){
+            let fila = poder[i];
+            let suma = fila.reduce((total,elemento)=>total+elemento,0)
+            //pomedio
+            promedios[i] = suma /fila.length;
+        }
+
+        return promedios;
+    }
+
+    function vaapelear(nombresdbz, promedios){
+        
+        for (let i = 0; i < nombresdbz.length; i++){
+            if (promedios[i]>=70 ){
+                console.log(nombresdbz[i] + " tiene un poder promedio de: "
+                 + promedios[i] + " y es un super heroe");
+            }else{
+                console.log(nombresdbz[i] + " tiene un poder promedio de: "
+                 + promedios[i] + " y no es un heroe");
+            }
+        }
+
+    }
+
+    let promedios = calcularpromedio(poder);
+    vaapelear(nombresdbz, promedios);
+    </script>
+</body>
+</html>

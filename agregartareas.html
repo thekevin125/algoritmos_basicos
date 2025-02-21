@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="nuevatarea" placeholder="Ingrese una tarea">
+    <button onclick="agregartarea()">Agregar tarea</button>
+    <ul id="listatask"></ul>
+
+    <script>
+        function agregartarea() {
+            let nuevatareatext = document.getElementById("nuevatarea").value;
+
+            if (nuevatareatext === "") {
+                alert("Ingrese una tarea");
+                return;
+            }
+
+            // Crear elemento en la lista
+            let nuevatarea = document.createElement("li");
+            nuevatarea.textContent = nuevatareatext + " ";
+
+            // Crear botón eliminar
+            let botoneliminar = document.createElement("button");
+            botoneliminar.textContent = "Eliminar";
+            botoneliminar.onclick = function() {
+                nuevatarea.remove();
+            };
+
+            // Agregar botón al elemento
+            nuevatarea.appendChild(botoneliminar);
+
+            // Agregar elemento a la lista
+            document.getElementById("listatask").appendChild(nuevatarea);
+
+            // Limpiar input
+            document.getElementById("nuevatarea").value = "";
+        }
+    </script>
+</body>
+</html>

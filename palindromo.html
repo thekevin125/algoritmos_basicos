@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function esPalindromo(palabra) {
+    let palabraLimpia = palabra.toLowerCase(); // Convertir todo a minúsculas
+    let palabraInvertida = palabraLimpia.split("").reverse().join("");
+    return palabraLimpia === palabraInvertida;
+}
+
+console.log(esPalindromo("RADAR"));  // true
+console.log(esPalindromo("Casa"));   // false
+console.log(esPalindromo("Reconocer")); // true
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function calculadora(a, b, operacion) {
+    switch (operacion) {
+        case "suma":
+            return a + b;
+        case "resta":
+            return a - b;
+        case "multiplicacion":
+            return a * b;
+        case "division":
+            if (b === 0) {
+                return "Error: División por cero";
+            }
+            return a / b;
+        default:
+            return "Error: Operación no válida";
+    }
+}
+
+// Llamamos a la función y mostramos el resultado
+console.log(calculadora(12, 12, "suma")); // 24
+console.log(calculadora(12, 5, "resta")); // 7
+console.log(calculadora(12, 3, "multiplicacion")); // 36
+console.log(calculadora(12, 4, "division")); // 3
+console.log(calculadora(12, 0, "division")); // Error: División por cero
+console.log(calculadora(12, 12, "potencia")); // Error: Operación no válida
+
+   
+    </script>
+</body>
+</html>

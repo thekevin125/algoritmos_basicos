@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //buscarname por teclado y decir si esta o no
+        
+        
+let nombres = ["LUISA", "CAMILA", "SHARIT"]
+let ponernames = prompt("ingrese su nombre")
+
+function pl (nombres, ponernames) {
+    return nombres.includes(ponernames)
+    
+}
+estaono = pl (nombres, ponernames)
+
+if (estaono == true){
+    alert("esta en la lista")
+}else{
+    alert("no esta en la lista")
+}
+       
+   
+    </script>
+</body>
+</html>

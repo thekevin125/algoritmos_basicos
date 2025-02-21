@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>buscar name</h1>
+
+
+
+    <script>
+
+      
+
+
+function encontrarMaximo(arr) {
+    let maximo = arr[0]; // Asumimos que el primer número es el máximo inicial
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > maximo) {
+            maximo = arr[i]; // Actualizamos el máximo si encontramos un número más grande
+        }
+    }
+
+    return maximo;
+}
+
+// Probamos la función con el ejemplo dado
+let numeros = [3, 7, 2, 9, 4, 8];
+console.log("El número más grande es:", encontrarMaximo(numeros));
+
+
+                        
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
