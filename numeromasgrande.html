@@ -6,43 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+    
 
-    <h1>buscar name</h1>
-
-
-
-    <script>
-
-      
+    <h1>Haz tu código tranquilo, intenta escribir la función encontrarMaximo, pruébala con el arreglo [3, 7, 2, 9, 4, 8]
+         y cuando estés listo, envíame lo que escribiste y te digo si está bien o si hay algo para mejorar.</h1>
 
 
-function encontrarMaximo(arr) {
-    let maximo = arr[0]; // Asumimos que el primer número es el máximo inicial
 
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > maximo) {
-            maximo = arr[i]; // Actualizamos el máximo si encontramos un número más grande
+    <script >
+
+        
+
+
+
+    function encontrarm (arr){
+        let maximo = arr[0];
+
+        for (let i = 1; i <arr.length; i++){
+           
+            if (arr[i]>maximo){
+                maximo = arr[i];
+            }
+            }
+            return maximo
         }
-    }
 
-    return maximo;
-}
+    
 
-// Probamos la función con el ejemplo dado
-let numeros = [3, 7, 2, 9, 4, 8];
-console.log("El número más grande es:", encontrarMaximo(numeros));
+    let numeros = [12,2,3]
+    console.log("numwero grande", encontrarm(numeros));
+    
 
-
-                        
-
-
-
-
-
-
-
-
-    </script>
+   </script>
     
 </body>
 </html>
