@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// CREAR UN ALGORITMO QUE TOME UN ARRAY DE OBJECTOS 
+// Y DEVUELVA UN ARRAY DE PARES
+   
+let array =[{
+    id : 1,
+    nombre: "Juan",
+}, {
+    id : 2,
+    nombre: "Pedro",
+}, {
+    id : 3,
+    nombre: "Maria",
+}]
+// con el id y el nombre de cada objeto
+let pares = [
+    [ 1,  { id : 1, nombre: "Juan" },  ],
+    [ 2, { id : 3, nombre: "Pedro" } ],
+    [ 3, { id : 2, nombre: "Maria" } ]
+];
+function topairs (arr){
+    let pairs = [];
+    for ( idx in arr){
+        let elemento = arr[idx];
+        pairs[idx] = [elemento.id, elemento];
+
+    }
+    return pairs;
+    
+
+}
+
+let resultado = topairs(array);
+console.log(resultado); 
+
+    
+</script>
+</body>
+</html>
